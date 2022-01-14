@@ -1,0 +1,62 @@
+.shortener
+  background: $dark-violet
+  background-image: url(".././images/bg-shorten-mobile.svg")
+  border-radius: 5px
+  padding: 3rem
+  width: 90%
+  margin: auto
+  transform: translateY(-50%)
+
+  &__card
+
+    background: #fff
+    display: flex
+    flex-direction: column
+    margin: 1rem auto
+    padding: 3rem
+    text-align: left
+    position: relative
+    width: 90%
+
+    &-short
+      color: $cyan
+      
+
+    &-original
+      color: $dark-violet
+      display: inline
+      text-overflow: ellipsis
+      white-space: nowrap
+      overflow: hidden
+
+    &-btn
+      background: $cyan
+      border: none
+      color: #fff
+      cursor: pointer
+      font-weight: bold
+      padding: 1rem 2rem
+      margin-top: 1rem
+
+      &:hover
+        background: lighten($cyan, 20%)
+
+  &__link
+    border-top: 1px solid $grayish-violet
+    display: flex
+    flex-direction: column
+    margin-top: 2rem
+    padding-top: 1rem
+
+  &__form
+    display: flex
+    flex-direction: column
+
+    &-url
+      color: $gray
+      font-size: 1.5rem
+      padding: 2rem
+
+    &-send
+      border-radius: 5px
+      border: none

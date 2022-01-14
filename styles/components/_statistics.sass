@@ -1,0 +1,33 @@
+.statistics
+  background: lighten($dark-violet, 70%)
+  text-align: center
+  padding-bottom: 6rem
+
+  &__description
+    color: $grayish-violet
+    margin: 2rem auto
+    width: 75%
+
+  &__grid
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-gap: 8rem
+    margin-top: 10rem
+    padding: 2rem
+
+    &-item
+      background: #fff
+      padding: 4rem
+      position: relative
+
+      &-icon
+        background-color: $dark-violet
+        border-radius: 50%
+        padding: 2rem
+        transform: translateY(-100%)
+        margin-bottom: -6rem
+
+      &-description
+        color: $grayish-violet
+        margin: 2rem auto 0 auto
+        width: 75%

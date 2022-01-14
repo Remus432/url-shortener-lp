@@ -1,0 +1,69 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+*:focus
+  outline: none
+
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.8rem
+  font-family: 'Poppins', sans-serif
+  overflow-x: hidden
+
+li
+  list-style: none
+
+a 
+  text-decoration: none
+
+p
+  color: $gray
+
+.active
+  align-items: center
+  background: $dark-violet
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  position: absolute
+  padding: 4rem
+  top: 50px
+  width: 90%
+  left: 50%
+  transform: translateX(-50%)
+  
+  & ul
+    padding-bottom: 0rem
+    border-bottom: 1px solid darken($grayish-violet, 30%)
+    width: 100%
+    text-align: center
+
+  & li 
+    margin-bottom: 2rem
+
+  & a 
+    color: #fff
+
+.msg
+  display: none
+
+.err
+  position: relative
+
+  & input
+    border: 2.5px solid #e74c3c
+
+    &::placeholder
+      color: #e74c3c
+
+  & .msg
+    bottom: -25px
+    left: 0
+    color: #e74c3c
+    display: inline-block
+    position: absolute
+    font-size: 1rem

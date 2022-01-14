@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>URL Shortner Landing Page</title>
+</head>
+<body>
+  
+  <div class="header">
+    <div class="header__nav">
+      <img src="./images/logo.svg" alt="Shortly Logo" class="header__nav-logo">
+      <div class="header__nav-menu hidden">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Features</a></li>
+          <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Pricing</a></li>
+          <li class="header__nav-list-item"><a href="#" class="header__nav-list-item-link">Resources</a></li>
+        </ul>
+        <div class="header__nav-auth">
+          <button class="header__nav-auth-login">Login</button>
+          <button class="header__nav-auth-signup btn-primary">Sign Up</button>
+        </div>
+      </div>
+      <img src="./images/icon-hamburger.svg" alt="Hamburger Button Icon" class="header__nav-hamburger">
+    </div>
+    <div class="header__content">
+      <img src="./images/illustration-working.svg" alt="" class="header__content-illustration">
+      <div class="header__content-cta">
+        <div class="header__content-cta-text">
+          <h1 class="header__content-headline">More than just shorter links</h1>
+          <p class="header__content-description">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        </div>
+        <button class="header__content-cta-btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="statistics">
+    <div class="shortener-container">
+      <div class="shortener">
+        <div class="shortener__form">
+          <input type="url" name="url" placeholder="Shorten a link here..." class="shortener__form-url">
+          <p class="msg">Please enter a valid url</p>
+          <button class="shortener__form-send btn-primary">Shorten It</button>
+        </div>
+      </div>
+      <div class="shortener__urls"></div>
+    </div>
+    <h2 class="statistics__headline">Advanced Statistics</h2>
+    <p class="statistics__description">Track how your links are performing across the web within our advanced statistics dashboard.</p>
+    <div class="statistics__grid">
+      <div class="statistics__grid-item">
+        <img src="./images/icon-brand-recognition.svg" alt="Brand Recognition Icon" class="statistics__grid-item-icon">
+        <h3 class="statistics__grid-item-headline">Brand Recognition</h3>
+        <p class="statistics__grid-item-description">
+          Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.
+        </p>
+      </div>
+      <div class="statistics__grid-item">
+        <img src="./images/icon-detailed-records.svg" alt="Detailed Records Icon" class="statistics__grid-item-icon">
+        <h3 class="statistics__grid-item-headline">Detailed Records</h3>
+        <p class="statistics__grid-item-description">
+          Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+        </p>
+      </div>
+      <div class="statistics__grid-item">
+        <img src="./images/icon-fully-customizable.svg" alt="Fully Customizable Icon" class="statistics__grid-item-icon">
+        <h3 class="statistics__grid-item-headline">Fully Customizable</h3>
+        <p class="statistics__grid-item-description">
+          Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2 class="cta__headline">Boost your links today</h2>
+    <div class="btn__cta btn-primary">Get Started</div>
+  </div>
+
+  <footer class="footer">
+    <img src="./images/logo-white.svg" alt="Shortly Logo" class="footer__logo">
+    <div class="footer__links">
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link link-headline">Features</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Links Shortening</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Branded Links</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Analytics</a></li>
+      </ul>
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link link-headline">Resources</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Blog</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Developers</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Support</a></li>
+      </ul>
+      <ul class="footer__links-list">
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link link-headline">Company</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">About</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Our Team</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Careers</a></li>
+        <li class="footer__links-list-item"><a href="#" class="footer__links-list-item-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__social">
+      <object data="./images/icon-facebook.svg" alt="Facebook Icon" class="footer__social-icon"></object>
+      <object data="./images/icon-twitter.svg" alt="Twitter Icon" class="footer__social-icon"></object>
+      <object data="./images/icon-pinterest.svg" alt="Pinterest Icon" class="footer__social-icon"></object>
+      <object data="./images/icon-instagram.svg" alt="Instagram Icon" class="footer__social-icon"></object>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
